@@ -56,6 +56,7 @@ top_tech_focus <- top_tech_focus %>%
   mutate(`HQ Country` = case_when(
     `HQ Country` == "United States" ~ "United States of America",
     `HQ Country` == "Mainland China" ~ "China",
+    `HQ Country` == "Scotland" ~ "United Kindom",
     TRUE ~ `HQ Country`
   ))
 
@@ -361,3 +362,15 @@ head(product_data)
 # Save as PDF and PNG
 ggsave("market_readiness_filtered.pdf", product_tech_plot, width = 12, height = 9)
 ggsave("market_readiness_filtered.png", product_tech_plot, width = 12, height = 9, dpi = 300)
+
+
+
+
+
+
+
+
+
+
+
+
